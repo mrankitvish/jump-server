@@ -36,7 +36,7 @@ AllowTcpForwarding yes
 ```bash
 # systemctl restart sshd.service
 ```
-###### `Note`: In some cases, a jump server may work without any configuration on the target machines. However, additional configuration may be required depending on the specific setup and requirements of the network and the resources being accessed.
+##### `Note`: In some cases, a jump server may work without any configuration on the target machines. However, additional configuration may be required depending on the specific setup and requirements of the network and the resources being accessed.
 
 ##### Test jump server:
 1. Loging to your machine (client)
