@@ -9,7 +9,7 @@ A jump server creates a secure connection between a user's machine and a target 
 - The jump server must be configured with routing that enables it to connect to both the external network and the internal network where the target machine is located, allowing users to securely connect to the target machine through the jump server.
 ---
 
-#####Configure jump server:
+##### Configure jump server:
 1. Loging to your jump server machine
 2. Edit sshd_config file
 ```bash
@@ -24,7 +24,7 @@ GatewayPorts yes
 # systemctl restart sshd.service
 ```
 
-#####Configure target machine:
+##### Configure target machine:
 1. Loging to your target machine
 2. Edit sshd_config file
 ```bash
@@ -36,10 +36,9 @@ AllowTcpForwarding yes
 ```bash
 # systemctl restart sshd.service
 ```
-######Note: 
-In some cases, a jump server may work without any configuration on the target machines. However, additional configuration may be required depending on the specific setup and requirements of the network and the resources being accessed.
+###### `Note`: In some cases, a jump server may work without any configuration on the target machines. However, additional configuration may be required depending on the specific setup and requirements of the network and the resources being accessed.
 
-#####Test jump server:
+##### Test jump server:
 1. Loging to your machine (client)
 2. (Optional) Copy ssh public to your jump server
 ```bash
