@@ -40,7 +40,7 @@ AllowTcpForwarding yes
 
 ##### Test jump server:
 1. Loging to your machine (client)
-2. (Optional) Copy ssh public to your jump server
+2. (Optional) Copy ssh public into jump server
 ```bash
 # ssh-keygen
 ```
